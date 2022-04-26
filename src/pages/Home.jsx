@@ -33,7 +33,7 @@ export const Home = ({ navigation }) => {
     const [inputValue, setInputValue] = useState("")
 
     //STATE THAT IDENTIFIES IF SOMETHING REFREHSING OR NOT
-    const [refreshing, setRefreshing] = React.useState(false);
+    const [refreshing, setRefreshing] = useState(false);
 
     //FUNCTION THAT REFRESHES CURRENT gifResults FOR NEW ONES
     //WHEN refreshing IS TRUE, CONDITIONAL RENDERING METHOD AT Line: 111, WILL SET LOADING ANIMATION 
@@ -77,7 +77,7 @@ export const Home = ({ navigation }) => {
                             onTouchStart={showCloseInput}
                             //WHEN STATE OF inputActivity IS TRUE, IT APPLIES inputFieldActive STYLE TO SHIRK <INPUT TEXT> INPUT
                             style={inputActivity ? styles.inputFieldActive : styles.inputField}
-                            placeholder="Placeholder"
+                            placeholder="Rechercher..."
                             autocomplete="on"
                             //SETS NEW STATE FOR inputValue AND searchRequest WHEN USER IS TYPING
                             onChangeText={text => { setInputValue(text), setSearchRequest(text); }} />
