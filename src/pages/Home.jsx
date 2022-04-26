@@ -137,7 +137,7 @@ export const Home = ({ navigation }) => {
                         </View>}
                 </View>
                 //SETS DEFAULT SEARCH REQUEST IF STATE OF SEARCH REQUEST IS EMPTY AKA UNDENTYFIED SO THE SCREEN WITH RESULTS ISN'T EMPTY
-            ) : setSearchRequest("nature")}
+            ) : setSearchRequest("fortnite")}
             <StatusBar style="auto" />
         </View>
     );
